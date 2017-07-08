@@ -1,0 +1,8 @@
+/.idea
+/.mvn
+/src/test/java/
+/target
+/wenda.iml
+/mvnw
+/mvnw.cmd
+/*.swp
