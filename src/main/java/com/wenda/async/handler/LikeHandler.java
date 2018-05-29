@@ -16,7 +16,9 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Created by CLAY on 2017/3/25.
+ * @Discription:
+ * @Author: yanghao
+ * @Date: 2018/4/25
  */
 @Component
 public class LikeHandler implements EventHandler {

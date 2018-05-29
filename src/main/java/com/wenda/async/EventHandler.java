@@ -3,8 +3,11 @@ package com.wenda.async;
 import java.util.List;
 
 /**
- * Created by CLAY on 2017/3/20.
+ * @Discription:
  * 接口 ，用来处理 Event
+ *
+ * @Author: yanghao
+ * @Date: 2018/4/20
  */
 public interface EventHandler {
     void doHandle(EventModel model);

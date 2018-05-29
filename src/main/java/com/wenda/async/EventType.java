@@ -1,8 +1,12 @@
 package com.wenda.async;
 
 /**
- * Created by CLAY on 2017/3/20.
+ /**
+ * @Discription:
+ *
  * 处理事件的类型
+ * @Author: yanghao
+ * @Date: 2018/4/10
  */
 public enum EventType {
     LIKE(0),            //点赞

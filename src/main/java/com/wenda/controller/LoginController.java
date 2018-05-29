@@ -17,7 +17,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
 
 /**
- * Created by CLAY on 2017/2/14.
+ * @Discription:
+ * @Author: yanghao
+ * @Date: 2018/3/14
  */
 @Controller
 public class LoginController {
@@ -90,7 +92,7 @@ public class LoginController {
                 response.addCookie(cookie);
 
                 eventProducer.fireEvent(new EventModel(EventType.LOGIN)
-                        .setExt("username", username).setExt("email", "zjuyxy@qq.com")
+                        .setExt("username", username).setExt("email", "1398708223@qq.com")
                         .setActorId((int)map.get("userId")));
 
                 if (StringUtils.isNotBlank(next)) {

@@ -4,7 +4,9 @@ import com.wenda.model.User;
 import org.apache.ibatis.annotations.*;
 
 /**
- * Created by CLAY on 2017/2/10.
+ * @Discription:
+ * @Author: yanghao
+ * @Date: 2018/3/10
  */
 @Mapper
 public interface UserDAO {

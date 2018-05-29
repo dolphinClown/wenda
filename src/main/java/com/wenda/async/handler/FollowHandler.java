@@ -17,7 +17,9 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Created by CLAY on 2017/3/26.
+ * @Discription:
+ * @Author: yanghao
+ * @Date: 2018/4/26
  */
 @Component
 public class FollowHandler implements EventHandler {

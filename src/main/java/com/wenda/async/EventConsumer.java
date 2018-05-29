@@ -17,8 +17,11 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by CLAY on 2017/3/20.
+ * @Discription:
  * 处理队列中的 Event，与 EventHandler 连接起来
+ *
+ * @Author: yanghao
+ * @Date: 2018/4/10
  */
 @Service
 public class EventConsumer implements InitializingBean, ApplicationContextAware {

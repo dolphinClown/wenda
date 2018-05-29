@@ -16,7 +16,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by CLAY on 2017/3/10.
+ * @Discription:
+ * @Author: yanghao
+ * @Date: 2018/3/10
  */
 @Controller
 public class FeedController {

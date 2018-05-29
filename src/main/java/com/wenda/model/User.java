@@ -1,7 +1,9 @@
 package com.wenda.model;
 
 /**
- * Created by CLAY on 2017/2/10.
+ * @Discription:
+ * @Author: yanghao
+ * @Date: 2018/3/10
  */
 public class User {
     private int id;

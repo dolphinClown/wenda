@@ -6,7 +6,9 @@ import org.apache.ibatis.annotations.*;
 import java.util.List;
 
 /**
- * Created by CLAY on 2017/2/27.
+ * @Discription:
+ * @Author: yanghao
+ * @Date: 2018/3/27
  */
 @Mapper
 public interface CommentDAO {

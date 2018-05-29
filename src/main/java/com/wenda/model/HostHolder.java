@@ -3,7 +3,9 @@ package com.wenda.model;
 import org.springframework.stereotype.Component;
 
 /**
- * Created by CLAY on 2017/2/13.
+ * @Discription:
+ * @Author: yanghao
+ * @Date: 2018/3/13
  */
 @Component
 public class HostHolder {
@@ -18,6 +20,6 @@ public class HostHolder {
     }
 
     public void clear() {
-        users.remove();;
+        users.remove();
     }
 }

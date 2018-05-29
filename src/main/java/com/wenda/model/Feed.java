@@ -5,7 +5,9 @@ import com.alibaba.fastjson.JSONObject;
 import java.util.Date;
 
 /**
- * Created by CLAY on 2017/3/10.
+ * @Discription:
+ * @Author: yanghao
+ * @Date: 2018/3/10
  */
 public class Feed {
     private int id;
@@ -55,6 +57,7 @@ public class Feed {
         this.data = data;
         dataJSON = JSONObject.parseObject(data);
     }
+
     public String get(String key) {
         return dataJSON == null ? null : dataJSON.getString(key);
     }

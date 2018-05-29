@@ -5,6 +5,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
 
+/**
+ * @Discription:
+ * @Author: yanghao
+ * @Date: 2018/3/1
+ */
 @SpringBootApplication
 public class WendaApplication extends SpringBootServletInitializer {
     @Override

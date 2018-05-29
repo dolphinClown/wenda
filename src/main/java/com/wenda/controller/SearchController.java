@@ -15,7 +15,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by wenda on 2016/7/24.
+ * @Discription:
+ * @Author: yanghao
+ * @Date: 2018/5/24
  */
 @Controller
 public class SearchController {

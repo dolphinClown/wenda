@@ -4,7 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by CLAY on 2017/3/20.
+ * @Discription:
+ * @Author: yanghao
+ * @Date: 2018/4/20
  */
 public class EventModel {
     //所有的 set 方法返回对象本身，类似jQuery的连续调用

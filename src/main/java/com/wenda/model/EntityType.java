@@ -1,7 +1,9 @@
 package com.wenda.model;
 
 /**
- * Created by CLAY on 2017/2/16.
+ * @Discription:
+ * @Author: yanghao
+ * @Date: 2018/3/16
  */
 public class EntityType {
     public static int ENTITY_QUESTION = 1;  //问题

@@ -3,7 +3,9 @@ package com.wenda.model;
 import java.util.Date;
 
 /**
- * Created by CLAY on 2017/2/11.
+ * @Discription:
+ * @Author: yanghao
+ * @Date: 2018/3/11
  */
 public class Question {
     private int id;
