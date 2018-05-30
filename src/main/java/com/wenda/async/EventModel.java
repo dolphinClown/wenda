@@ -16,7 +16,7 @@ public class EventModel {
     private int entityId;   //触发的载体
     private int entityOwnerId;
 
-    private Map<String, String> exts = new HashMap<String, String>();
+    private Map<String, String> exts = new HashMap<>();
 
     public EventModel() {
 

@@ -42,7 +42,7 @@ public class FeedHandler implements EventHandler {
     QuestionService questionService;
 
     private String buildFeedData(EventModel model) {
-        Map<String, String> map = new HashMap<String ,String>();
+        Map<String, String> map = new HashMap<>();
         // 触发用户是通用的
         User actor = userService.getUser(model.getActorId());
         if (actor == null) {
@@ -52,6 +52,7 @@ public class FeedHandler implements EventHandler {
         map.put("userHead", actor.getHeadUrl());
         map.put("userName", actor.getName());
 
+        //事件类型为评论、关注、或者发布问题
         if (model.getType() == EventType.COMMENT ||
                 (model.getType() == EventType.FOLLOW  && model.getEntityType() == EntityType.ENTITY_QUESTION)) {
             Question question = questionService.getById(model.getEntityId());
@@ -68,8 +69,8 @@ public class FeedHandler implements EventHandler {
     @Override
     public void doHandle(EventModel model) {
         // 为了测试，把model的userId随机一下
-        Random r = new Random();
-        model.setActorId(1+r.nextInt(10));
+//        Random r = new Random();
+//        model.setActorId(1+r.nextInt(10));
 
         // 构造一个新鲜事
         Feed feed = new Feed();

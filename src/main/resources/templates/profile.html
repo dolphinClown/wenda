@@ -34,7 +34,7 @@
                                         /
                                         <a target="_blank" href="/user/${profileUser.user.id}/followees" class="zg-link-gray-normal">${profileUser.followeeCount}关注</a>
                                         /
-                                        <a target="_blank" href="#" class="zg-link-gray-normal">${profileUser.commentCount} 回答</a>
+                                        <a target="_blank" href="javascript:;" class="zg-link-gray-normal">${profileUser.commentCount} 回答</a>
                                         <!--<a target="_blank" href="#" class="zg-link-gray-normal">548 赞同</a>-->
                                     </div>
                                 </div>
@@ -56,7 +56,7 @@
                             <meta itemprop="ZReactor" data-id="389034" data-meta="">
                             <div class="feed-item-inner">
                                 <div class="avatar">
-                                    <a title="$!{vo.user.name}" data-tip="p$t$amuro1230" class="zm-item-link-avatar" target="_blank" href="#">
+                                    <a title="$!{vo.user.name}" data-tip="p$t$amuro1230" class="zm-item-link-avatar" target="_blank" href="javascript:;">
                                         <img src="$!{vo.user.headUrl}" class="zm-item-img-avatar"></a>
                                 </div>
                                 <div class="feed-main">
@@ -104,7 +104,8 @@
                         </div>
                         #end
                     </div>
-                    <a href="javascript:;" id="zh-load-more" class="zg-btn-white zg-r3px zu-button-more">更多</a>
+
+                    <a href="/user/${profileUser.user.id}?limit=$vos.size()" id="zh-load-more" data-method="next" class="zg-btn-white zg-r3px zu-button-more" style="">更多</a></div>
                 </div>
             </div>
         </div>

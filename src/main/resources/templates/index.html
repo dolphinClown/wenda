@@ -21,7 +21,9 @@
                             <meta itemprop="ZReactor" data-id="389034" data-meta="{&quot;source_type&quot;: &quot;promotion_answer&quot;, &quot;voteups&quot;: 4168, &quot;comments&quot;: 69, &quot;source&quot;: []}">
                             <div class="feed-item-inner">
                                 <div class="avatar">
-                                    <a title="$!{vo.user.name}" data-tip="p$t$amuro1230" class="zm-item-link-avatar" target="_blank" href="#">
+                                    <!--<a title="$!{vo.user.name}" data-tip="p$t$amuro1230" class="zm-item-link-avatar" target="_blank" href="#">-->
+                                    <a class="zm-item-link-avatar js-user-${vo.user.id}" href="/user/${vo.user.id}" target="_blank"
+                                       data-original_title="${vo.user.name}">
                                         <img src="$!{vo.user.headUrl}" class="zm-item-img-avatar"></a>
                                 </div>
                                 <div class="feed-main">
@@ -53,7 +55,7 @@
                                                 <div class="zm-meta-panel">
                                                     <!--<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-123114">-->
                                                         <!--<i class="z-icon-follow"></i>关注问题</a>-->
-                                                    <a href="#" name="addcomment" class="meta-item toggle-comment js-toggleCommentBox">
+                                                    <a href="javascript:;" name="addcomment" class="meta-item toggle-comment js-toggleCommentBox">
                                                         <i class="z-icon-comment"></i>${vo.question.commentCount} 条评论</a>
 
 
@@ -69,7 +71,7 @@
                         </div>
                         #end
                     </div>
-                    <a href="javascript:;" id="zh-load-more" data-method="next" class="zg-btn-white zg-r3px zu-button-more" style="">更多</a></div>
+                    <a href="/next?limit=$vos.size()" id="zh-load-more" data-method="next" class="zg-btn-white zg-r3px zu-button-more" style="">更多</a></div>
             </div>
         </div>
     </div>

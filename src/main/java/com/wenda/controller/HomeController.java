@@ -50,6 +50,7 @@ public class HomeController {
             vo.set("question", question);
             vo.set("followCount", followService.getFollowerCount(EntityType.ENTITY_QUESTION, question.getId()));
             vo.set("user", userService.getUser(question.getUserId()));
+//            vo.set("limit", limit + 10);
             vos.add(vo);
         }
         return vos;
@@ -62,9 +63,20 @@ public class HomeController {
         return "index";
     }
 
+    @RequestMapping(path = {"/next"}, method = {RequestMethod.GET, RequestMethod.POST})
+    public String getNextQuestions(Model model, @RequestParam(value = "userId", defaultValue = "0") int userId,
+                                   @RequestParam(value = "limit") int limit) {
+        model.addAttribute("vos", getQuestions(userId, 0, limit + 10));
+        return "index";
+    }
+
     @RequestMapping(path = {"/user/{userId}"}, method = {RequestMethod.GET, RequestMethod.POST})
-    public String userIndex(Model model, @PathVariable("userId") int userId) {
-        model.addAttribute("vos", getQuestions(userId, 0, 10));
+    public String userIndex(Model model, @PathVariable("userId") int userId, @RequestParam(value = "limit", required = false) Integer limit) {
+        if (limit == null) {
+            model.addAttribute("vos", getQuestions(userId, 0, 10));
+        } else {
+            model.addAttribute("vos", getQuestions(userId, 0, limit + 10));
+        }
 
         User user = userService.getUser(userId);
         ViewObject vo = new ViewObject();
