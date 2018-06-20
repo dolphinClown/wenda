@@ -42,7 +42,7 @@ public class FeedController {
         int localUserId = hostHolder.getUser() != null ? hostHolder.getUser().getId() : 0;
         //获取 timeline 缓存队列
         List<String> feedIds = jedisAdapter.lrange(RedisKeyUtil.getTimelineKey(localUserId), 0, 10);
-        List<Feed> feeds = new ArrayList<Feed>();
+        List<Feed> feeds = new ArrayList<>();
         for (String feedId : feedIds) {
             Feed feed = feedService.getById(Integer.parseInt(feedId));
             if (feed != null) {

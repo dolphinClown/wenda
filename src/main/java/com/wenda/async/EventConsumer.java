@@ -27,7 +27,7 @@ import java.util.Map;
 public class EventConsumer implements InitializingBean, ApplicationContextAware {
     private static final Logger logger = LoggerFactory.getLogger(EventConsumer.class);
     //从队列中取出 EventModel ，查看它的 EventType ，并根据类型，找到要处理的一批 EventHandler 的实现类。
-    private Map<EventType, List<EventHandler>> config = new HashMap<EventType, List<EventHandler>>();
+    private Map<EventType, List<EventHandler>> config = new HashMap<>();
     private ApplicationContext applicationContext;
 
     @Autowired
